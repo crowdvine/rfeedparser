@@ -25,10 +25,9 @@ Or for the latest development version:
 
 Dependencies on other gems are handled by rubygems, but rfeedparser
 also relies on having bindings to a native XML parsing library. The
-recommended choice is libxml, which is installable with the
-libxml-ruby1.8 package in Debian-based systems. But it can also fall
-back to expat (the libxml-parser-ruby1.8 Debian package) if libxml is
-not installed.
+default choice is expat (the libxml-parser-ruby1.8 Debian package). 
+But it can also fall back to libxml, (the libxml-ruby1.8 debian package)
+if libexpat is not installed.
 
 == Usage
 
