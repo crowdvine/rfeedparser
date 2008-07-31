@@ -22,7 +22,6 @@ require 'zlib'
 
 require 'rubygems'
 
-
 # If available, Nikolai's UTF-8 library will ease use of utf-8 documents.
 # See http://git.bitwi.se/ruby-character-encodings.git/.
 begin
@@ -69,7 +68,7 @@ rescue LoadError, NameError
   
   begin
     require 'rfeedparser/libxml_parser'
-    StrictFeedParser = FeedParser::LibXML::StrictFeedParser
+    StrictFeedParser = FeedParser::LibXml::StrictFeedParser
 
   rescue LoadError, NameError
     StrictFeedParser = nil
